@@ -44,7 +44,7 @@ AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 
-BOARD_SUPPORTS_SOUND_TRIGGER := true
+BOARD_SUPPORTS_SOUND_TRIGGER := false
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
 USE_CUSTOM_AUDIO_POLICY := 1
@@ -84,7 +84,7 @@ LOC_HIDL_VERSION := 4.0
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/hidl/manifest.xml
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/hidl/c2_manifest.xml
+DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_FILES += $(COMMON_PATH)/configs/hidl/manifest-qva.xml
 
